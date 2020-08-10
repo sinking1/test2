@@ -1,12 +1,7 @@
 pipeline {
-  agent {
-    none {
-      reuseNode true
-    }
-
-  }
+  agent any
   stages {
-    stage('阶段-1') {
+    stage('checkout--') {
       steps {
         checkout([
           $class: 'GitSCM',
